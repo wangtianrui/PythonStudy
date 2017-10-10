@@ -61,3 +61,18 @@ print("reverse:",cars)
 
 print("len:",len(cars)) #得到列表长度
 
+print('--------------------')
+
+'''
+***************列表的其他操作***************
+'''
+singers = ["初音未来","林俊杰","reol","薛之谦"]
+print("original:",singers)
+
+#顺序循环遍历
+for singer in singers:
+    print("顺序遍历：",singer)
+    singer = singer + "No.1"
+    print("将当前元素'singer'增加一个字符串",singer,"\n")
+print("循环中操作的不是原列表的元素：",singers)
+
