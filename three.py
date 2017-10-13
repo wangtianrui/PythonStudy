@@ -36,3 +36,22 @@ def get_people(name, age, sex):
 
 
 print(get_people("wang", 19, 1))
+
+people = ['wang', 'chen', 'jiang', 'he']
+
+
+def print_models(list):
+    list.append("li")
+
+
+print_models(people[:])  # ['wang', 'chen', 'jiang', 'he'] 无法被修改
+print(people)
+print_models(people)  # ['wang', 'chen', 'jiang', 'he', 'li']可以被修改
+print(people)
+
+#接受任意数量的实参
+#toppings是一个元组
+def make_pizza(*toppings):
+    print(toppings)
+make_pizza('pepperoni')
+make_pizza('mushrooms', 'green peppers', 'extra cheese')

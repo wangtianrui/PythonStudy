@@ -111,6 +111,10 @@ print(image[1])
 image = (100, 728)  # 正确
 print(image)
 
+#遍历元组
+for i in image:
+    print(i)
+
 '''
 ***************if语句***************
 '''
