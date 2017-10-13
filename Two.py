@@ -76,3 +76,55 @@ for singer in singers:
     print("将当前元素'singer'增加一个字符串",singer,"\n")
 print("循环中操作的不是原列表的元素：",singers)
 
+
+print('--------------------')
+
+'''
+***************数值列表***************
+'''
+for value in range(1,5):
+    print(value)
+
+rangetest = range(1,5)
+print(rangetest)
+rangetest = list(range(5))
+print(rangetest)
+squares = []
+for value in range(1,11,2):
+    squares.append(value**2)
+print(squares)
+'''
+***************列表的切片***************
+'''
+foods = ['pizza','falafel','cake']
+my_foods = foods[2:]#2以后的
+print(my_foods)
+my_foods = foods[:-1]
+print(my_foods)
+my_foods = foods[:]   #列表赋值必须[:]
+print(my_foods)
+
+'''
+***************元组***************
+'''
+image = (1024,728) #元组元素无法单独修改
+print(image[0])
+print(image[1])
+#image[0] = 100   #错误
+image = (100,728) #正确
+print(image)
+
+'''
+***************if语句***************
+'''
+def checkAnswer(answer):
+    if 1 == answer :
+        print("answer is 1")
+    elif (2 < answer)and(answer <5):   #and和or关联词
+        print('answer is betten 2 and 5')
+    else:
+        print("answer is (,1)||[5,)||2")
+checkAnswer(0)
+checkAnswer(1)
+checkAnswer(2)
+checkAnswer(4)
