@@ -189,32 +189,40 @@ print("-------------------------")
 for key in sorted(people.keys()):
     print(key)
 
-#嵌套使用
+# 嵌套使用
 
-#列表中放字典
+# 列表中放字典
 peoples = []
-for i in range(1,6):
+for i in range(1, 6):
     peoples.append(people)
 print(peoples[:])
 
-#字典中放列表
-songs = ["song1","song2","song3"]
+# 字典中放列表
+songs = ["song1", "song2", "song3"]
 person = {
-    "can_sing_song":songs,
-    "age":20,
-    "name":'jinyi'
+    "can_sing_song": songs,
+    "age": 20,
+    "name": 'jinyi'
 }
 print(person)
 print(person['can_sing_song'][2])
 
-#字典中放字典
+# 字典中放字典
 classes = {
-    "class_name":"wulianwang",
-    "classmate":person
+    "class_name": "wulianwang",
+    "classmate": person
 }
 print(classes)
 print(classes["classmate"]['can_sing_song'][2])
 
 '''
 ***************input和while循环***************
+
+
+message = input("输入:")
+print("输入的是:" + message)
+
+while message != "wang":
+    message = input()
+    print(message)
 '''
